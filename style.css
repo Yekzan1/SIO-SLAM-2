@@ -1,0 +1,507 @@
+/* Style Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Menu fixe */
+.site-header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 15px 0;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .logo a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin-right: 30px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #ffb703;
+}
+
+/* Section Hero */
+.hero {
+    background: linear-gradient(135deg, #00bcd4, #1a73e8);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero h1 span {
+    color: #ffb703;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Champ de recherche sous le texte de bienvenue */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.search-input {
+    padding: 12px;
+    width: 60%;
+    max-width: 600px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.search-btn {
+    background-color: #ffb703;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #f4a301;
+}
+
+/* Nos Services */
+.services {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.service p {
+    font-size: 1rem;
+}
+
+/* Portfolio */
+.portfolio {
+    padding: 60px 20px;
+    background-color: #f4f6f9;
+    text-align: center;
+}
+
+.portfolio-gallery {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    max-width: 300px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.portfolio-item h4 {
+    margin: 20px;
+    font-size: 1.2rem;
+}
+
+/* À Propos */
+.about {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    color: #ffb703;
+}
+
+.stat p {
+    font-size: 1rem;
+}
+
+/* Appel à l'action */
+.cta {
+    padding: 60px 20px;
+    background: #1a73e8;
+    text-align: center;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+}
+
+.cta .btn {
+    background-color: #ffb703;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* Nouvelle page RESULTATS.HTML /*
+/* Section de Résultats de Recherche */
+.search-results {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.search-results h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.search-results p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.result-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.result-item:hover {
+    transform: translateY(-10px);
+}
+
+.result-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.result-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.result-item .btn {
+    background-color: #ffb703;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.result-item .btn:hover {
+    background-color: #f4a301;
+}
+
+
+
+
+
+
+/* NOUVELLE PAGE PAGE 3 RESULTAT.HTML
+
+/* Style Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Menu fixe */
+.site-header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 15px 0;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .logo a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin-right: 30px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #ffb703;
+}
+
+/* Section Détail de l'élément */
+.item-detail {
+    padding: 60px 20px;
+    background-color: white;
+    display: flex;
+    gap: 40px;
+}
+
+.item-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.item-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+.item-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.item-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.item-actions {
+    margin-top: 20px;
+}
+
+.item-actions .btn {
+    background-color: #ffb703;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.item-actions .btn:hover {
+    background-color: #f4a301;
+}
+
+/* Section Commentaires */
+.comments-section {
+    padding: 60px 20px;
+    background-color: #f4f6f9;
+    text-align: center;
+}
+
+.comment-form textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.comment-form button {
+    background-color: #ffb703;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #f4a301;
+}
+
+.comments-list {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.comment {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.comment p {
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
