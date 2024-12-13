@@ -98,6 +98,7 @@ body {
     border-radius: 30px;
     font-size: 1rem;
     margin-right: 10px;
+    margin-bottom: 10px; /* Espace ajouté en bas de la barre de recherche */
 }
 
 .search-btn {
@@ -108,11 +109,13 @@ body {
     font-size: 1rem;
     color: white;
     cursor: pointer;
+    margin-bottom: 10px; /* Assurez-vous que le bouton est aussi espacé en bas */
 }
 
 .search-btn:hover {
     background-color: #f4a301;
 }
+
 
 /* Nos Services */
 .services {
@@ -505,3 +508,1392 @@ footer .logo a {
     text-decoration: none;
     font-weight: 600;
 }
+
+
+
+
+/* SITE ECOMMERCE.HTML
+
+/* Variables de couleurs */
+:root {
+    --primary-color: #1A73E8; /* Bleu primaire */
+    --secondary-color: #34A853; /* Vert secondaire */
+    --text-color: #333; /* Texte sombre */
+    --background-color: #f4f4f4; /* Fond clair */
+    --footer-color: #222; /* Fond du pied de page */
+    --button-hover-color: #145aa8; /* Bleu sombre pour hover */
+}
+
+/* Général */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* En-tête */
+.site-header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.site-header .logo a {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Section Héroïque */
+.hero {
+    background: url('images/ecommerce-hero.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: 100px; /* Compense l'en-tête fixe */
+}
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+.hero-content h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero-content h1 span {
+    color: var(--secondary-color);
+}
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+.hero-content .btn-primary {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+.hero-content .btn-primary:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Fonctionnalités */
+.features {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+.features-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.feature {
+    background: var(--background-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.feature:hover {
+    transform: translateY(-10px);
+}
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+.feature p {
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--footer-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+footer ul li a:hover {
+    color: #fff;
+}
+
+
+
+/* NOUVELLE PAGE /*
+
+/* seo.html /*
+
+/* Variables de couleurs */
+:root {
+    --primary-color: #1A73E8; /* Bleu primaire */
+    --secondary-color: #34A853; /* Vert secondaire */
+    --text-color: #333; /* Texte principal */
+    --background-color: #f4f4f4; /* Couleur de fond */
+    --footer-bg-color: #222; /* Fond du pied de page */
+    --button-hover-color: #145aa8; /* Bleu foncé pour le hover */
+    --card-bg-color: #fff; /* Fond des cartes */
+    --border-color: #ddd; /* Couleur des bordures */
+}
+
+/* Général */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* En-tête */
+.site-header {
+    background-color: var(--card-bg-color);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.site-header .logo a {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Section Détail du Service */
+.item-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 60px 20px;
+    background-color: var(--background-color);
+}
+.item-detail .item-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.item-detail .item-info {
+    max-width: 600px;
+    background: var(--card-bg-color);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.item-detail .item-info h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.item-detail .item-info .item-description {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+.item-detail .item-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.item-detail .item-info ul li {
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+.item-detail .item-info ul li::before {
+    content: "✔";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+.item-detail .item-info .btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+.item-detail .item-info .btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Section Témoignages */
+.testimonials-section {
+    background-color: var(--background-color);
+    padding: 60px 20px;
+    text-align: center;
+}
+.testimonials-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.testimonial {
+    background: var(--card-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: left;
+}
+.testimonial p {
+    font-size: 1.1em;
+    margin: 0;
+    line-height: 1.5;
+}
+.testimonial p strong {
+    color: var(--secondary-color);
+}
+
+/* Section Appel à l'action */
+.cta {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.cta p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.cta .btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+.cta .btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+footer ul li a:hover {
+    color: #fff;
+}
+
+
+
+
+/* NOUVELLE PAGE /*
+/*Maintenance.html /*
+
+/* Variables de couleurs */
+:root {
+    --primary-color: #1A73E8; /* Bleu primaire */
+    --secondary-color: #34A853; /* Vert secondaire */
+    --text-color: #333; /* Couleur du texte */
+    --background-color: #f4f4f4; /* Fond principal */
+    --footer-bg-color: #222; /* Fond du pied de page */
+    --button-hover-color: #145aa8; /* Bleu foncé au survol */
+    --card-bg-color: #fff; /* Fond des cartes */
+    --border-color: #ddd; /* Bordures */
+}
+
+/* Général */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* En-tête */
+.site-header {
+    background-color: var(--card-bg-color);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.site-header .logo a {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Section Détail du Service */
+.item-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 60px 20px;
+    background-color: var(--background-color);
+}
+.item-detail .item-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.item-detail .item-info {
+    max-width: 600px;
+    background: var(--card-bg-color);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.item-detail .item-info h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.item-detail .item-info .item-description {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+.item-detail .item-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.item-detail .item-info ul li {
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+.item-detail .item-info ul li::before {
+    content: "✔";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+.item-detail .item-info .btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+.item-detail .item-info .btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Section Témoignages */
+.testimonials-section {
+    background-color: var(--background-color);
+    padding: 60px 20px;
+    text-align: center;
+}
+.testimonials-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.testimonial {
+    background: var(--card-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: left;
+}
+.testimonial p {
+    font-size: 1.1em;
+    margin: 0;
+    line-height: 1.5;
+}
+.testimonial p strong {
+    color: var(--secondary-color);
+}
+
+/* Section Appel à l'action */
+.cta {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.cta p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.cta .btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+.cta .btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+footer ul li a:hover {
+    color: #fff;
+}
+
+
+
+
+
+/* NOUVELLE PAGE
+/* nos-services.html
+
+/* Variables de couleurs */
+root {
+    --primary-color: #1A73E8; /* Bleu vibrant */
+    --secondary-color: #34A853; /* Vert lumineux */
+    --text-color: #333; /* Texte sombre et élégant */
+    --background-color: #ffffff; /* Fond blanc pour plus de clarté */
+    --footer-bg-color: #222; /* Fond du pied de page */
+    --button-hover-color: #145aa8; /* Bleu foncé au survol */
+    --card-bg-color: #fff; /* Fond des cartes */
+    --border-color: #ddd; /* Bordures douces */
+}
+
+/* Général */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* En-tête */
+.site-header {
+    background-color: var(--card-bg-color);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.site-header .logo a {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Section Héroïque */
+.hero {
+    background: url('https://via.placeholder.com/1600x600?text=Nos+Services') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: 80px; /* Pour compenser l'en-tête fixe */
+}
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* Section Introduction des Services */
+.services-intro {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+.services-intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.services-intro p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+.services-intro .btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+.services-intro .btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--footer-bg-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+footer ul li a:hover {
+    color: #fff;
+}
+
+
+
+
+/* NOUVELLE PAGE
+/*A PROPOS
+
+/* Variables de couleurs */
+:root {
+    --primary-color: #1A73E8;
+    --secondary-color: #34A853;
+    --text-color: #333;
+    --background-color: #ffffff;
+    --footer-bg-color: #222;
+    --button-hover-color: #145aa8;
+    --card-bg-color: #fff;
+    --border-color: #ddd;
+}
+
+/* Général */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* En-tête */
+.site-header {
+    background-color: var(--card-bg-color);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.site-header .logo a {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Section Héroïque */
+.hero {
+    background: url('https://via.placeholder.com/1600x600?text=À+Propos+de+Kronos') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: 80px;
+}
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* Section Notre Histoire */
+.our-story {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.our-story h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.our-story p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* Section Notre Mission */
+.our-mission {
+    padding: 60px 20px;
+    text-align: center;
+}
+.our-mission h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.our-mission p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* Section Notre Équipe (uniquement Yekzan) */
+.our-team {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+.our-team h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+.team-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.team-member {
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    background: var(--card-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.team-member:hover {
+    transform: translateY(-10px);
+}
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+.team-member p {
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--footer-bg-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+footer ul li a:hover {
+    color: #fff;
+}
+
+
+
+
+/* contact.html NOUVELLE PAGE
+
+/* Variables de couleurs */
+:root {
+    --primary-color: #1A73E8;
+    --secondary-color: #34A853;
+    --text-color: #333;
+    --background-color: #ffffff;
+    --footer-bg-color: #222;
+    --button-hover-color: #145aa8;
+    --card-bg-color: #fff;
+    --border-color: #ddd;
+}
+
+/* Général */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* En-tête */
+.site-header {
+    background-color: var(--card-bg-color);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.site-header .logo a {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Section Héroïque */
+.hero {
+    background: url('https://via.placeholder.com/1600x600?text=Contact+Us') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: 80px;
+}
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* Formulaire de Contact */
+.contact-form {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.contact-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    background: var(--card-bg-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1em;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+.btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--footer-bg-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+footer ul li a:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* PANIER
+
+/* Variables de couleurs */
+:root {
+    --primary-color: #1A73E8;
+    --secondary-color: #34A853;
+    --text-color: #333;
+    --background-color: #ffffff;
+    --footer-bg-color: #222;
+    --button-hover-color: #145aa8;
+    --card-bg-color: #fff;
+    --border-color: #ddd;
+    --highlight-color: #ff6347; /* Couleur pour le texte du produit */
+}
+
+/* Général */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* Section Panier */
+.cart-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    margin-top: 80px; /* pour compenser l'entête fixé */
+}
+.cart-section h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.order-summary {
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.order-item {
+    font-size: 1.1em;
+}
+.order-total {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+hr {
+    margin: 20px 0;
+    border: 1px solid var(--border-color);
+}
+
+/* Détails du produit */
+.item-info h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--highlight-color); /* Couleur pour le titre produit */
+    margin-bottom: 20px;
+}
+
+.item-info p {
+    font-size: 1.2em;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Formulaire de commande */
+.form-container {
+    background: var(--card-bg-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1em;
+}
+.form-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+.btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+    width: 100%;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+footer ul li a:hover {
+    color: #fff;
+}
+
+
+
+
