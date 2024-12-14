@@ -161,10 +161,19 @@ body {
 /* Portfolio */
 .portfolio {
     padding: 60px 20px;
-    background-color: #f4f6f9;
+    background-color: #f4f6f9; /* Fond doux et cohérent */
     text-align: center;
 }
 
+.portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: none; /* Pas de majuscules */
+    letter-spacing: 1.5px;
+    color: #333; /* Gris foncé pour un titre professionnel */
+}
+
+/* Galerie */
 .portfolio-gallery {
     display: flex;
     gap: 30px;
@@ -175,22 +184,122 @@ body {
 .portfolio-item {
     max-width: 300px;
     width: 100%;
-    background: white;
-    border-radius: 10px;
+    background: #ffffff; /* Fond blanc pour chaque élément */
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    /* Dégradé de couleurs pour un effet futuriste */
+    background: linear-gradient(135deg, rgba(0, 204, 255, 0.6), rgba(255, 0, 204, 0.6)); /* Dégradé multicouleur */
 }
 
+/* Effet au survol */
+.portfolio-item:hover {
+    transform: translateY(-8px); /* Effet de lévitation */
+    box-shadow: 0 8px 20px rgba(0, 140, 255, 0.3); /* Ombre douce bleutée */
+    background: linear-gradient(135deg, rgba(0, 140, 255, 0.8), rgba(255, 153, 0, 0.8)); /* Dégradé dynamique au survol */
+}
+
+/* Image */
 .portfolio-item img {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #f1f1f1;
+    transition: transform 0.3s ease;
+    border-bottom: 3px solid #00aaff; /* Liseré futuriste bleu */
+}
+
+/* Effet de zoom sur l'image au survol */
+.portfolio-item:hover img {
+    transform: scale(1.08); /* Zoom léger */
+}
+
+/* Titre */
+.portfolio-item h4 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #333;
+    text-transform: none; /* Pas de majuscules */
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.portfolio-item:hover h4 {
+    color: #fff; /* Le texte devient blanc au survol pour plus de contraste */
+}
+
+/* Animation de couleurs sur le titre et l'image */
+.portfolio-item:hover img {
+    filter: brightness(0.9) saturate(1.5); /* Effet de saturation et luminosité */
 }
 
 .portfolio-item h4 {
-    margin: 20px;
-    font-size: 1.2rem;
+    color: #333;
+    transition: all 0.3s ease;
 }
+
+.portfolio-item:hover h4 {
+    color: #ffffff; /* Texte en blanc pour le contraste */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Ombre portée pour plus de lisibilité */
+}
+
+
+/* Galerie */
+.portfolio-gallery {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    max-width: 300px;
+    width: 100%;
+    background: #1a1a1a; /* Fond sombre de l'élément */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Effet futuriste de survol */
+.portfolio-item:hover {
+    transform: translateY(-10px) scale(1.05); /* Effet de lévitation */
+    box-shadow: 0 15px 25px rgba(0, 198, 255, 0.6); /* Glow bleu */
+}
+
+/* Image */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #00c6ff; /* Bordure futuriste */
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1); /* Zoom léger sur l'image */
+}
+
+/* Titre */
+.portfolio-item h4 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    transition: color 0.3s ease;
+}
+
+.portfolio-item:hover h4 {
+    color: #00c6ff; /* Change de couleur au survol */
+}
+
 
 /* À Propos */
 .about {
@@ -245,23 +354,52 @@ body {
     margin-top: 20px;
 }
 
-/* Footer */
-footer {
-    padding: 20px;
-    background-color: #333;
-    color: white;
+
+ /* Footer */
+ footer {
+    background: linear-gradient(to right, #1B2A41, #243B55); /* Dégradé bleu foncé */
+    color: #fff; /* Texte blanc */
+    padding: 15px 30px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Titre */
+.footer-title h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Copyright */
+.footer-copyright {
     text-align: center;
+    flex: 1;
 }
 
-footer .logo a {
-    color: #fff;
+/* Réseaux sociaux */
+.footer-social {
+    display: flex;
+    gap: 15px; /* Espacement entre liens */
+}
+
+.footer-social .social-link {
     text-decoration: none;
-    font-weight: 600;
+    color: #00C853; /* Vert vif */
+    transition: color 0.3s;
 }
 
-
-
-
+.footer-social .social-link:hover {
+    color: #00FF95; /* Vert clair au survol */
+}
 
 
 /* Nouvelle page RESULTATS.HTML /*
@@ -321,17 +459,43 @@ footer .logo a {
 }
 
 .result-item .btn {
-    background-color: #ffb703;
-    padding: 10px 20px;
+    background-color: #ffb703; /* Couleur de fond */
+    padding: 10px 20px; /* Ajuste la largeur avec du padding horizontal */
     text-decoration: none;
     color: white;
-    border-radius: 30px;
+    border-radius: 30px; /* Boutons arrondis */
     font-weight: bold;
+    display: inline-block; /* Permet d'aligner les boutons proprement */
+    width: auto; /* Ajuste la largeur automatiquement selon le contenu */
+    text-align: center; /* Centre le texte à l'intérieur */
+    margin-top: auto; /* Garde les boutons alignés verticalement */
 }
 
-.result-item .btn:hover {
-    background-color: #f4a301;
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch; /* Étire les éléments pour uniformiser la hauteur */
 }
+
+.result-item {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    justify-content: space-between; /* Uniformise l'espacement */
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.result-item:hover {
+    transform: translateY(-10px); /* Animation légère */
+}
+
 
 
 
@@ -1239,17 +1403,7 @@ body {
 }
 
 /* Section Héroïque */
-.hero {
-    background: url('https://via.placeholder.com/1600x600?text=Nos+Services') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    position: relative;
-    margin-top: 80px; /* Pour compenser l'en-tête fixe */
-}
+
 .hero-overlay {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -1262,12 +1416,19 @@ body {
     position: relative;
     z-index: 2;
     max-width: 800px;
-    text-align: center;
+
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+    padding: 20px; /* Ajoute de l'espace interne pour l'esthétique */
+    text-align: right; /* Aligne le texte à gauche */
+
+    
 }
 .hero-content h1 {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 20px;
+
+    
 }
 .hero-content p {
     font-size: 1.3em;
@@ -1491,15 +1652,42 @@ body {
     gap: 40px;
     flex-wrap: wrap;
 }
+
+/* Effet au survol avec scale et rotation */
+.team-member:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 1), 
+        0 0 40px rgba(0, 212, 255, 1), 
+        0 0 60px rgba(123, 104, 238, 1), 
+        0 0 80px rgba(255, 105, 180, 1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Conteneur de l'élément */
 .team-member {
     text-align: center;
     width: 300px;
     padding: 20px;
-    background: var(--card-bg-color);
+    background: var(--card-bg-color, #333); /* valeur par défaut */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8), 
+        0 0 20px rgba(0, 255, 255, 0.8);
+    animation: textGlow 1.5s infinite alternate;
 }
+
+/* Animation de la brillance du texte */
+@keyframes textGlow {
+    0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+    100% { text-shadow: 0 0 30px rgba(255, 255, 255, 1); }
+}
+
+
 .team-member:hover {
     transform: translateY(-10px);
 }
@@ -1622,7 +1810,7 @@ body {
 
 /* Section Héroïque */
 .hero {
-    background: url('https://via.placeholder.com/1600x600?text=Contact+Us') no-repeat center center/cover;
+    background: url('https://img.freepik.com/vecteurs-premium/technologie-contemporaine-construction-futuriste-elegante-noir-blanc-figure-vectorielle-3d-abstraite-lignes-points-connectes_570429-41475.jpg') no-repeat center center/cover;
     height: 70vh;
     display: flex;
     justify-content: center;
