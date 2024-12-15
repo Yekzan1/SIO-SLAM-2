@@ -81,7 +81,7 @@ body {
     margin-top: 20px;
 }
 
-/* Champ de recherche sous le texte de bienvenue */
+/* Champ de recherche */
 .search-container {
     display: flex;
     justify-content: center;
@@ -90,32 +90,32 @@ body {
     padding: 10px 0;
 }
 
-.search-input {
+.search-input, .search-btn {
     padding: 12px;
-    width: 60%;
-    max-width: 600px;
     border: none;
     border-radius: 30px;
     font-size: 1rem;
+}
+
+.search-input {
+    width: 60%;
+    max-width: 600px;
     margin-right: 10px;
-    margin-bottom: 10px; /* Espace ajouté en bas de la barre de recherche */
+    margin-bottom: 10px;
 }
 
 .search-btn {
     background-color: #ffb703;
     padding: 12px 25px;
-    border: none;
-    border-radius: 30px;
-    font-size: 1rem;
     color: white;
     cursor: pointer;
-    margin-bottom: 10px; /* Assurez-vous que le bouton est aussi espacé en bas */
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .search-btn:hover {
     background-color: #f4a301;
 }
-
 
 /* Nos Services */
 .services {
@@ -161,16 +161,15 @@ body {
 /* Portfolio */
 .portfolio {
     padding: 60px 20px;
-    background-color: #f4f6f9; /* Fond doux et cohérent */
+    background-color: #f4f6f9;
     text-align: center;
 }
 
 .portfolio h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    text-transform: none; /* Pas de majuscules */
     letter-spacing: 1.5px;
-    color: #333; /* Gris foncé pour un titre professionnel */
+    color: #333;
 }
 
 /* Galerie */
@@ -184,122 +183,43 @@ body {
 .portfolio-item {
     max-width: 300px;
     width: 100%;
-    background: #ffffff; /* Fond blanc pour chaque élément */
+    background: linear-gradient(135deg, rgba(0, 204, 255, 0.6), rgba(255, 0, 204, 0.6));
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    position: relative;
     cursor: pointer;
-    /* Dégradé de couleurs pour un effet futuriste */
-    background: linear-gradient(135deg, rgba(0, 204, 255, 0.6), rgba(255, 0, 204, 0.6)); /* Dégradé multicouleur */
+    position: relative;
 }
 
-/* Effet au survol */
 .portfolio-item:hover {
-    transform: translateY(-8px); /* Effet de lévitation */
-    box-shadow: 0 8px 20px rgba(0, 140, 255, 0.3); /* Ombre douce bleutée */
-    background: linear-gradient(135deg, rgba(0, 140, 255, 0.8), rgba(255, 153, 0, 0.8)); /* Dégradé dynamique au survol */
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 140, 255, 0.3);
+    background: linear-gradient(135deg, rgba(0, 140, 255, 0.8), rgba(255, 153, 0, 0.8));
 }
 
-/* Image */
 .portfolio-item img {
     width: 100%;
-    height: auto;
     transition: transform 0.3s ease;
-    border-bottom: 3px solid #00aaff; /* Liseré futuriste bleu */
+    border-bottom: 3px solid #00aaff;
 }
 
-/* Effet de zoom sur l'image au survol */
 .portfolio-item:hover img {
-    transform: scale(1.08); /* Zoom léger */
+    transform: scale(1.08);
 }
 
-/* Titre */
 .portfolio-item h4 {
     font-size: 1.2rem;
     margin: 15px 0;
     color: #333;
-    text-transform: none; /* Pas de majuscules */
-    letter-spacing: 1px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .portfolio-item:hover h4 {
-    color: #fff; /* Le texte devient blanc au survol pour plus de contraste */
-}
-
-/* Animation de couleurs sur le titre et l'image */
-.portfolio-item:hover img {
-    filter: brightness(0.9) saturate(1.5); /* Effet de saturation et luminosité */
-}
-
-.portfolio-item h4 {
-    color: #333;
-    transition: all 0.3s ease;
-}
-
-.portfolio-item:hover h4 {
-    color: #ffffff; /* Texte en blanc pour le contraste */
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Ombre portée pour plus de lisibilité */
-}
-
-
-/* Galerie */
-.portfolio-gallery {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.portfolio-item {
-    max-width: 300px;
-    width: 100%;
-    background: #1a1a1a; /* Fond sombre de l'élément */
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    cursor: pointer;
-}
-
-/* Effet futuriste de survol */
-.portfolio-item:hover {
-    transform: translateY(-10px) scale(1.05); /* Effet de lévitation */
-    box-shadow: 0 15px 25px rgba(0, 198, 255, 0.6); /* Glow bleu */
-}
-
-/* Image */
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-    border-bottom: 3px solid #00c6ff; /* Bordure futuriste */
-    transition: transform 0.3s ease;
-}
-
-.portfolio-item:hover img {
-    transform: scale(1.1); /* Zoom léger sur l'image */
-}
-
-/* Titre */
-.portfolio-item h4 {
-    font-size: 1.2rem;
-    margin: 15px 0;
     color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    transition: color 0.3s ease;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-
-.portfolio-item:hover h4 {
-    color: #00c6ff; /* Change de couleur au survol */
-}
-
 
 /* À Propos */
 .about {
@@ -347,20 +267,18 @@ body {
 .cta .btn {
     background-color: #ffb703;
     padding: 12px 30px;
-    text-decoration: none;
     color: white;
     border-radius: 30px;
     font-weight: bold;
     margin-top: 20px;
+    text-decoration: none;
 }
 
-
- /* Footer */
- footer {
-    background: linear-gradient(to right, #1B2A41, #243B55); /* Dégradé bleu foncé */
-    color: #fff; /* Texte blanc */
+/* Footer */
+footer {
+    background: linear-gradient(to right, #1B2A41, #243B55);
+    color: #fff;
     padding: 15px 30px;
-    font-family: Arial, sans-serif;
     font-size: 0.9rem;
 }
 
@@ -372,34 +290,32 @@ body {
     margin: 0 auto;
 }
 
-/* Titre */
 .footer-title h3 {
     margin: 0;
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-/* Copyright */
 .footer-copyright {
     text-align: center;
     flex: 1;
 }
 
-/* Réseaux sociaux */
 .footer-social {
     display: flex;
-    gap: 15px; /* Espacement entre liens */
+    gap: 15px;
 }
 
 .footer-social .social-link {
+    color: #00C853;
     text-decoration: none;
-    color: #00C853; /* Vert vif */
     transition: color 0.3s;
 }
 
 .footer-social .social-link:hover {
-    color: #00FF95; /* Vert clair au survol */
+    color: #00FF95;
 }
+
 
 
 /* Nouvelle page RESULTATS.HTML /*
